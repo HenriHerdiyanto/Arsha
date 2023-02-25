@@ -1,0 +1,72 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.konten {
+    width: 300px;
+    height: 300px;
+    margin-left: 80px;
+    margin-top: 20px;
+    border: 5px solid #1069b7;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.konten img {
+    width: cover;
+    height: 100%;
+    padding: 0;
+}
+
+.konten .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #0c3c53;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.description p {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.konten .btn {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: translateY(100%);
+}
+
+.konten:hover .description {
+    transform: translateY(0);
+    height: 100%;
+}
+
+.konten:hover .button {
+    transform: translateY(0);
+}
